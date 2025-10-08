@@ -7,19 +7,53 @@
 </head>
 
 <body>
-	<img src="https://assets.hongkiat.com/uploads/aria-web-standards/landmark-roles-example.jpg" alt="ARIA Roles" width="400px"/>
-	<h1>ARIA Roles</h1>
-	<ul>
-		<li>nav</li>
-		<li>img</li>
-		<li>h1</li>
-	</ul>
-	<nav>
-		 <a href="/html/">HTML</a> |
-		 <a href="/css/">CSS</a> |
-		 <a href="/js/">JavaScript</a> |
-		 <a href="/python/">Python</a>
-	</nav>
+	  
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a role="link" href="#home">Home</a></li>
+            <li role="listitem"><a role="link" href="#about">About</a></li>
+            <li role="listitem"><a role="link" href="#projects">Projects</a></li>
+            <li role="listitem"><a role="link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <!-- Heading -->
+        <h1 role="heading" aria-level="1">Welcome to My Portfolio</h1>
+
+       
+        <div class="profile-section">
+           
+            <img role="img" 
+                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                 alt="Professional headshot of John Doe, a web developer smiling at the camera">
+            
+            
+            <div class="description">
+                <p>
+                    Hello! I'm John Doe, a passionate full-stack web developer with over 5 years of experience 
+                    creating accessible and user-friendly web applications. I specialize in modern JavaScript 
+                    frameworks and have a strong commitment to web accessibility standards.
+                </p>
+                <p>
+                    I believe that the web should be accessible to everyone, regardless of their abilities. 
+                    That's why I implement ARIA roles and follow WCAG guidelines in all my projects.
+                </p>
+            </div>
+        </div>
+
+    
+        <div class="skills-section">
+            <h2>Core Skills</h2>
+            <ul role="list">
+                <li role="listitem">Accessible Web Development & WCAG 2.1 Compliance</li>
+                <li role="listitem">JavaScript, React, and Node.js Development</li>
+                <li role="listitem">Responsive Design & Mobile-First Development</li>
+                <li role="listitem">User Experience (UX) Design & Testing</li>
+            </ul>
+        </div>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
